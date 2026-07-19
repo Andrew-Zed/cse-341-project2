@@ -5,7 +5,7 @@
     "description": "Movies and reviews API documentation for CSE 341 Project 2",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse-341-project2-t9r5.onrender.com",
   "basePath": "/",
   "tags": [
     {
@@ -18,7 +18,6 @@
     }
   ],
   "schemes": [
-    "http",
     "https"
   ],
   "consumes": [

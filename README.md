@@ -2,6 +2,9 @@
 
 A RESTful API for managing movies and their reviews, built with Express and MongoDB. Created for the CSE 341 (BYU) course, Project 2.
 
+**Live demo:** https://cse-341-project2-t9r5.onrender.com/
+**API docs:** https://cse-341-project2-t9r5.onrender.com/api-docs
+
 ## Features
 
 - Full CRUD for **movies** and **reviews**
@@ -56,10 +59,10 @@ The server starts on `PORT` (default `3000`) once the MongoDB connection succeed
 
 ### Regenerating API docs
 
-Swagger docs are pre-generated into `swagger.json` and served statically, so they must be regenerated after changing any route or controller:
+Swagger docs are pre-generated into `swagger.json` and served statically, so they must be regenerated after changing any route or controller. When regenerating for the deployed instance, set `SWAGGER_HOST` so the generated spec points at the live host instead of `localhost:3000`:
 
 ```bash
-node swagger.js
+SWAGGER_HOST=cse-341-project2-t9r5.onrender.com node swagger.js
 ```
 
 ## API documentation
