@@ -1,0 +1,71 @@
+// LOCALHOST
+### GET ALL MOVIES
+GET http://localhost:3000/movies
+
+#### GET SINGLE MOVIE
+GET http://localhost:3000/movies/REPLACE_WITH_MOVIE_ID
+
+#### CREATE MOVIE
+POST http://localhost:3000/movies HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "releaseYear": 2010,
+    "genre": "Sci-Fi",
+    "runtimeMinutes": 148,
+    "rating": "PG-13",
+    "synopsis": "A thief who steals corporate secrets through dream-sharing is given a chance to have his criminal history erased.",
+    "posterUrl": "https://example.com/inception.jpg"
+}
+
+#### UPDATE MOVIE
+PUT http://localhost:3000/movies/REPLACE_WITH_MOVIE_ID HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "releaseYear": 2010,
+    "genre": "Sci-Fi",
+    "runtimeMinutes": 148,
+    "rating": "PG-13",
+    "synopsis": "Updated synopsis text for this movie.",
+    "posterUrl": "https://example.com/inception.jpg"
+}
+
+#### DELETE MOVIE
+DELETE http://localhost:3000/movies/REPLACE_WITH_MOVIE_ID
+
+
+### GET ALL REVIEWS
+GET http://localhost:3000/reviews
+
+#### GET SINGLE REVIEW
+GET http://localhost:3000/reviews/REPLACE_WITH_REVIEW_ID
+
+#### CREATE REVIEW
+POST http://localhost:3000/reviews HTTP/1.1
+Content-Type: application/json
+
+{
+    "movieId": "REPLACE_WITH_MOVIE_ID",
+    "reviewerName": "Michael Angel",
+    "rating": 5,
+    "comment": "One of the best movies I've seen this year."
+}
+
+#### UPDATE REVIEW
+PUT http://localhost:3000/reviews/REPLACE_WITH_REVIEW_ID HTTP/1.1
+Content-Type: application/json
+
+{
+    "movieId": "REPLACE_WITH_MOVIE_ID",
+    "reviewerName": "Michael Angel",
+    "rating": 4,
+    "comment": "Updated comment after a rewatch."
+}
+
+#### DELETE REVIEW
+DELETE http://localhost:3000/reviews/REPLACE_WITH_REVIEW_ID
